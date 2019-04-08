@@ -59,7 +59,7 @@ from sklearn.model_selection import cross_val_score
 
 # Building the Neural Network
 def build_regressor(nr_neurons, nr_hiddenlayers, nr_features, optimizer = 'adam'):   
-    reproduce()
+    #reproduce()
     regressor = Sequential()
     
     # Adding the input layer and the first hidden layer
