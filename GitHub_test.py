@@ -52,7 +52,7 @@ from keras.layers import Dense
 from keras.models import Sequential
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 from keras.wrappers.scikit_learn import KerasRegressor
-from sklearn.cross_validation import cross_val_score
+from sklearn.model_selection import cross_val_score
 
 
 #from keras.layers import Dropout
