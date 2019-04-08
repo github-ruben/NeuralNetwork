@@ -176,4 +176,4 @@ for c in os.listdir(ModelCheckPoint_folder):
 regressor = build_regressor(nr_neurons, nr_hiddenlayers, nr_features)
 #regressor = build_regressor(15, 8, nr_features)
 #callbacks = [EarlyStopping(monitor='val_loss', patience=5), ModelCheckpoint(filepath ,mode= 'min',monitor = 'val_loss', save_best_only = 'True', verbose=1)]
-regressor.fit(X_train, y_train, batch_size = batch_size, nb_epoch = nr_epochs, callbacks = callbacks, validation_data = (X_test, y_test), verbose =2) 
+regressor.fit(X_train, y_train, batch_size = batch_size, nb_epoch = nr_epochs, verbose = 2)#callbacks = callbacks, validation_data = (X_test, y_test), verbose =2) 
